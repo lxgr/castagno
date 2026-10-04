@@ -16,7 +16,9 @@ cp Vendor/SwiftyJSON/Source/SwiftyJSON/PrivacyInfo.xcprivacy "$app/Contents/Reso
 cp Resources/Info.plist "$app/Contents/Info.plist"
 cp Resources/Icons/AppIcon.icns "$app/Contents/Resources/AppIcon.icns"
 cp -R "$bin/Castagno_Castagno.bundle" "$app/Contents/Resources/"
-cp Vendor/README.md "$app/Contents/Resources/Dependencies.md"
+# Remove the old developer-only summary from previously built bundles.
+rm -f "$app/Contents/Resources/Dependencies.md"
+rm -f "$app/Contents/Resources/Castagno_Castagno.bundle/ChestnutSpeaker.png"
 cp Vendor/OpenCastSwift/LICENSE "$app/Contents/Resources/OpenCastSwift-LICENSE"
 cp Vendor/SwiftyJSON/LICENSE "$app/Contents/Resources/SwiftyJSON-LICENSE"
 cp Vendor/SwiftProtobuf/LICENSE.txt "$app/Contents/Resources/SwiftProtobuf-LICENSE"

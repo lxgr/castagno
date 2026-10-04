@@ -26,12 +26,4 @@ enum ChestnutIcon {
         return image
     }()
 
-    static let header: NSImage = {
-        guard let url = artworkBundle.url(forResource: "ChestnutSpeaker", withExtension: "png"),
-              let image = NSImage(contentsOf: url) else {
-            preconditionFailure("Missing bundled chestnut speaker artwork")
-        }
-        image.size = NSSize(width: 32, height: 32)
-        return image
-    }()
 }

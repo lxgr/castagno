@@ -1,4 +1,4 @@
-"""Render the SVG masters; keep app and header artwork identical."""
+"""Render the SVG masters for the app icon and menu bar."""
 from pathlib import Path
 import cairosvg
 
@@ -17,7 +17,6 @@ app = '''<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" view
 (icons / "AppIcon.svg").write_text(app)
 for source, target, size in [
     ("AppIcon.svg", icons / "AppIcon.png", 1024),
-    ("ChestnutSpeaker.svg", resources / "ChestnutSpeaker.png", 64),
     ("MenuBar.svg", icons / "MenuBar.png", 18),
     ("MenuBar.svg", icons / "MenuBar@2x.png", 36),
 ]:

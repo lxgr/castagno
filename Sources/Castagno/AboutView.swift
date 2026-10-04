@@ -21,7 +21,7 @@ struct AboutView: View {
     var body: some View {
         VStack(spacing: 16) {
             HStack(spacing: 16) {
-                Image(nsImage: ChestnutIcon.header)
+                Image(nsImage: NSApp.applicationIconImage)
                     .resizable().scaledToFit().frame(width: 72, height: 72)
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: 5) {

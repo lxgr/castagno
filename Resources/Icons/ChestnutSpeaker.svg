@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2=".8">
+      <stop stop-color="#a56640"/><stop offset=".46" stop-color="#874627"/><stop offset="1" stop-color="#542819"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f0ddba"/><stop offset=".5" stop-color="#ddbf92"/><stop offset="1" stop-color="#c8a679"/>
+    </linearGradient>
+    <linearGradient id="cone" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#46453f"/><stop offset=".45" stop-color="#282824"/><stop offset="1" stop-color="#3b3a35"/>
+    </linearGradient>
+    <radialGradient id="dust" cx=".34" cy=".27" r=".8">
+      <stop stop-color="#53514b"/><stop offset=".5" stop-color="#33322d"/><stop offset="1" stop-color="#1d1c19"/>
+    </radialGradient>
+    <clipPath id="nut"><path d="M49 9 C50 6 52 6 54 10 C60 21 76 26 86 42 C96 56 96 73 85 84 C73 96 28 95 15 83 C3 73 6 55 15 42 C25 27 44 22 49 9Z"/></clipPath>
+  </defs>
+  <ellipse cx="50" cy="92" rx="34" ry="3.2" fill="#8b6f43" opacity=".18"/>
+  <!-- Upright, gently asymmetric shell. The pale crown identifies the chestnut. -->
+  <path d="M49 9 C50 6 52 6 54 10 C60 21 76 26 86 42 C96 56 96 73 85 84 C73 96 28 95 15 83 C3 73 6 55 15 42 C25 27 44 22 49 9Z" fill="url(#shell)"/>
+  <g clip-path="url(#nut)">
+    <path d="M49 10 C42 28 21 38 13 59 C8 70 16 79 28 84 C11 81 4 69 10 51 C16 34 37 23 49 10Z" fill="#ce8b5a" opacity=".22"/>
+    <path d="M57 16 C76 29 84 47 85 62 C86 75 77 86 62 92 C86 91 98 76 95 60 C93 39 77 25 57 16Z" fill="#482317" opacity=".28"/>
+    <path d="M27 29 C38 23 45 18 50 9 C52 17 58 23 65 29 L54 25 L50 30 L46 25Z" fill="#c9a77b"/>
+    <path d="M50 10 C49 17 47 23 46 25 L50 30 L54 25 C53 19 51 15 50 10Z" fill="#e4cba2"/>
+  </g>
+  <path d="M49 9 C50 6 52 6 54 10 C60 21 76 26 86 42 C96 56 96 73 85 84 C73 96 28 95 15 83 C3 73 6 55 15 42 C25 27 44 22 49 9Z" fill="none" stroke="#322016" stroke-width="1.7" stroke-linejoin="round"/>
+  <!-- Slightly smaller driver with a substantial mounting rim. -->
+  <g transform="translate(50 60) scale(.95) translate(-50 -56)">
+  <circle cx="50" cy="56" r="28" fill="url(#rim)" stroke="#2d1c13" stroke-width="1.8"/>
+  <circle cx="50" cy="56" r="22.4" fill="#191a18" stroke="#353530" stroke-width=".9"/>
+  <circle cx="50" cy="56" r="20.5" fill="#51504a"/>
+  <circle cx="50" cy="56" r="18.8" fill="url(#cone)"/>
+  <circle cx="50" cy="56" r="8.3" fill="#191915"/>
+  <circle cx="50" cy="55.6" r="6.8" fill="url(#dust)"/>
+  <g fill="#342e23" stroke="#ac9069" stroke-width=".4">
+    <circle cx="32.1" cy="38.1" r="1.35"/>
+    <circle cx="67.9" cy="38.1" r="1.35"/>
+    <circle cx="32.1" cy="73.9" r="1.35"/>
+    <circle cx="67.9" cy="73.9" r="1.35"/>
+  </g>
+  </g>
+</svg>

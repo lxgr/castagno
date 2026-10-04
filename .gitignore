@@ -1,0 +1,28 @@
+# Swift builds and packaged apps
+.build/
+dist/
+.swiftpm/
+DerivedData/
+
+# macOS metadata
+.DS_Store
+._*
+.AppleDouble/
+.LSOverride
+
+# Xcode per-user state
+xcuserdata/
+*.xcuserstate
+
+# Local VS Code state; keep the shared debug configuration
+.vscode/*
+!.vscode/launch.json
+
+# Python tooling caches
+__pycache__/
+*.py[cod]
+
+# Editor swap and backup files
+*.swp
+*.swo
+*~

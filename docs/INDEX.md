@@ -1,6 +1,7 @@
 # Project documentation
 
 - [Build, usage, CLI, icons, and verification](DEVELOPMENT.md)
+- [Release packaging and Homebrew distribution](RELEASING.md)
 - [Implementation plan and completed work](PLAN.md)
 - [Core, CLI, and menu bar architecture](ARCHITECTURE.md)
 - [Local-network investigation and troubleshooting](NETWORKING.md)

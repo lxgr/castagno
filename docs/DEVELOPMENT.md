@@ -25,7 +25,7 @@ Discovery starts as soon as the app launches. Failed receiver connections retry 
 
 If you see “Network is down,” inspect `connectionAttempts` and `lastConnectionError` in CLI JSON. The OS can report that error for local-network permission denial. See [NETWORKING.md](NETWORKING.md) for the tested diagnosis, logging commands, and optional `CASTAGNO_SIGN_IDENTITY` build setting.
 
-The build script produces an ad hoc signed app for local use on the current Mac architecture. Distribution signing, notarization, and universal builds are future work. Run the bundled app to get the proper macOS permission identity; `swift run` does not provide the bundle's usage metadata.
+The build script produces an ad hoc signed app for local use on the current Mac architecture. Published releases target Apple Silicon only; Developer ID signing and notarization remain future work. Run the bundled app to get the proper macOS permission identity; `swift run` does not provide the bundle's usage metadata.
 
 ## Screenshot demo
 

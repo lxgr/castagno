@@ -4,16 +4,25 @@ A tiny macOS menu bar app for Google Cast speakers, stereo pairs, and groups. Ad
 
 <img src="screenshot.png" alt="Castagno in action" width="400">
 
-## Run
+## Install
 
-Requires macOS 13+ and Xcode Command Line Tools with Swift 5.9+.
+Requires macOS 13+ on Apple Silicon.
+
+```sh
+brew install --cask lxgr/tap/castagno
+```
+
+Releases are ad-hoc signed and not notarized; remove the quarantine flag manually when downloading manually instead of using the Homebrew cask.
+
+## Build
+
+Requires Xcode Command Line Tools with Swift 5.9+.
 
 ```sh
 ./scripts/build-app.sh
-open dist/Castagno.app
 ```
 
-Click the chestnut speaker in your menu bar. Keep your Mac and receivers on the same network, and allow Local Network access when prompted.
+The app is built into `dist/Castagno.app`.
 
 See [the documentation](docs/INDEX.md) for development, CLI commands, troubleshooting, and future explorations.
 
